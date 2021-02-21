@@ -8,7 +8,8 @@ function App() {
   const getImages = (term) => {
     return unsplash.get("https://api.unsplash.com/search/photos", {
     params : {
-      query: term
+      query: term,
+      per_page: 100
     }
   });
 }
@@ -32,7 +33,7 @@ function App() {
     let promises = [];
     let pinData = [];
 
-    let pins = ['ocean', 'Tokyo', 'dogs', 'cats']
+    let pins = ['ocean', 'Tokyo', 'dogs', 'cats','lake','mouse','house','beauty','girls','mens','fashion','luxury','pillow','baby','laptop','clothes','hot','cold','gorgeous','nature','travel']
     pins.forEach((pinTeam) => {
       promises.push(getImages(pinTeam).then((res) => {
         let results = res.data.results;

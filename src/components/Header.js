@@ -18,17 +18,18 @@ function Header(props) {
         e.preventDefault();
         props.onSubmit(input);
         //console.log('this is the input : ',input);
+            //<LogoWrapper>
+              //      <IconButton>
+                //        <PinterestIcon/>
+                 //   </IconButton>
+                //</LogoWrapper>
 
     }
     
     return (
         <div>
             <Wrapper>
-                <LogoWrapper>
-                    <IconButton>
-                        <PinterestIcon/>
-                    </IconButton>
-                </LogoWrapper>
+                
 
 
                 
