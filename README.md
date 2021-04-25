@@ -14,6 +14,7 @@
   </a>
 
   <h3 align="center">Search Images</h3>
+  
 ### Built With
 
 * Javascript
